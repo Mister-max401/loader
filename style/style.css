@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+}
+.loader{
+    background-image: url(../images/please\ waiy.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+}
+.loader h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: #d73131;
+}
+.loader span:nth-child(1){
+    border-radius: 63% 37% 46% 54% / 60% 56% 44% 40%  ;
+    border-color: aqua;
+}
+
+.loader span:nth-child(2){
+    border-color: aqua;
+animation-direction: reverse;
+border-radius: 48% 52% 65% 35% / 51% 68% 32% 49% ;
+}
+
+.loader span:nth-child(3){
+    border-color: aqua;
+    animation-duration: 3s;
+    border-radius: 70% 30% 70% 30% / 30% 70% 30% 70%  ;
+}
+.loader span:nth-child(4){
+    animation-duration: infinite;
+    border-radius: 48% 52% 54% 46% / 44% 47% 53% 55% ;
+}
+
+.loader span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    pointer-events: none;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    0%{
+        transform: rotate(360deg);
+    }
+}
